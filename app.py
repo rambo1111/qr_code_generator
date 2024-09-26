@@ -44,4 +44,4 @@ def download():
         return send_file(img_io, mimetype='image/png', as_attachment=True, download_name='qrcode.png')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)
