@@ -43,5 +43,5 @@ def download():
         img_io = generate_qr_code(text)
         return send_file(img_io, mimetype='image/png', as_attachment=True, download_name='qrcode.png')
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
